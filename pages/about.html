@@ -1,35 +1,163 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-
-<title>About</title>
-
-<link rel="stylesheet"
-href="../css/style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - QuizNest</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .about-container {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 0 15px;
+        }
+        .about-card {
+            background: white;
+            padding: 30px 24px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,.06);
+        }
+        .about-header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .about-icon-main {
+            font-size: 45px;
+            color: #2563EB;
+            margin-bottom: 10px;
+        }
+        .about-card h2 {
+            font-size: 26px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .about-card .subtitle {
+            color: #2563EB;
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+        .about-card p {
+            color: #555;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .features-list {
+            margin: 25px 0;
+        }
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #eee;
+        }
+        .feature-item:last-child {
+            border-bottom: none;
+            margin-bottom: 10px;
+        }
+        .feature-icon {
+            font-size: 20px;
+            color: #2563EB;
+            background: #EEF4FF;
+            padding: 10px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+        }
+        .feature-text h4 {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 4px;
+        }
+        .feature-text p {
+            font-size: 14px;
+            color: #666;
+            margin: 0;
+            line-height: 1.4;
+        }
+        .back-home-btn {
+            display: block;
+            text-align: center;
+            width: 100%;
+            padding: 14px;
+            background: #2563EB;
+            color: white;
+            border-radius: 14px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+            margin-top: 25px;
+        }
+        .back-home-btn:hover {
+            background: #1d4ed8;
+            transform: translateY(-1px);
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="container">
+    <div class="header">
+        <div class="logo">
+            <div class="logo-box">QN</div>
+            <div>
+                <h1 style="font-size: 24px; font-weight: bold; margin: 0; color: #333;">QuizNest</h1>
+                <p style="margin: 0; color: #777; font-size: 14px;">Practice Smart, Score Better</p>
+            </div>
+        </div>
+    </div>
 
-<div class="subject-card">
+    <div class="about-container">
+        <div class="about-card">
+            <div class="about-header">
+                <div class="about-icon-main">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <h2>About QuizNest</h2>
+                <div class="subtitle">Practice Smart, Score Better</div>
+            </div>
+            
+            <p><strong>QuizNest</strong> is a simple, fast, and clean quiz platform designed to help aspirants prepare effectively for competitive exams like <strong>SSC CGL, CHSL, Railways, and state government exams</strong>. Our primary mission is to boost your learning speed, concept clarity, and mock test accuracy.</p>
+            
+            <div class="features-list">
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-bullseye"></i></div>
+                    <div class="feature-text">
+                        <h4>Exam Oriented Content</h4>
+                        <p>Questions for English, Polity, and other core subjects are strictly based on the latest pattern and previous year high-yield topics.</p>
+                    </div>
+                </div>
 
-<h2>About QuizNest</h2>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <div class="feature-text">
+                        <h4>Distraction-Free UI</h4>
+                        <p>Designed with a sleek layout to keep you completely focused on your studies without unnecessary ads, delays, or clutter.</p>
+                    </div>
+                </div>
 
-<p>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                    <div class="feature-text">
+                        <h4>Highly Mobile Optimized</h4>
+                        <p>Whether you are studying at a library or traveling, enjoy a seamless app-like experience directly inside your mobile web browser.</p>
+                    </div>
+                </div>
+            </div>
 
-QuizNest is a smart quiz platform for SSC and Competitive Exams.
-
-Practice Smart, Score Better.
-
-</p>
-
-</div>
-
-</div>
+            <a href="../index.html" class="back-home-btn">Start Practice Now</a>
+        </div>
+    </div>
 
 </body>
-
-</html>
+                 </html>
+  
