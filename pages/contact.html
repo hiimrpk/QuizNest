@@ -1,35 +1,130 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-
-<title>Contact</title>
-
-<link rel="stylesheet"
-href="../css/style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - QuizNest</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .contact-container {
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 0 15px;
+        }
+        .contact-card {
+            background: white;
+            padding: 30px 24px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,.06);
+            text-align: center;
+        }
+        .contact-icon-main {
+            font-size: 45px;
+            color: #2563EB;
+            margin-bottom: 15px;
+        }
+        .contact-card h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        .contact-card p {
+            color: #666;
+            font-size: 15px;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 14px;
+            border-radius: 14px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        /* Instagram Styling */
+        .instagram-btn {
+            background: #FFF0F5;
+            color: #E1306C;
+        }
+        .instagram-btn:hover {
+            background: #E1306C;
+            color: white;
+            transform: translateY(-2px);
+        }
+        /* Telegram/Email Styling */
+        .email-btn {
+            background: #EEF4FF;
+            color: #2563EB;
+        }
+        .email-btn:hover {
+            background: #2563EB;
+            color: white;
+            transform: translateY(-2px);
+        }
+        .back-home-btn {
+            display: inline-block;
+            width: 100%;
+            padding: 14px;
+            background: #333;
+            color: white;
+            border-radius: 14px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+        .back-home-btn:hover {
+            background: #000;
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="container">
+    <div class="header">
+        <div class="logo">
+            <div class="logo-box">QN</div>
+            <div>
+                <h1 style="font-size: 24px; font-weight: bold; margin: 0; color: #333;">QuizNest</h1>
+                <p style="margin: 0; color: #777; font-size: 14px;">Practice Smart, Score Better</p>
+            </div>
+        </div>
+    </div>
 
-<div class="subject-card">
+    <div class="contact-container">
+        <div class="contact-card">
+            <div class="contact-icon-main">
+                <i class="fa-regular fa-comments"></i>
+            </div>
+            <h2>Get in Touch!</h2>
+            <p>Koi sujhav ho, ya app me koi galti dikhe, toh aap humse directly connect kar sakte hain.</p>
+            
+            <div class="social-links">
+                <a href="https://instagram.com/just_mrpk" target="_blank" class="social-btn instagram-btn">
+                    <i class="fa-brands fa-instagram" style="font-size: 20px;"></i>
+                    Instagram
+                </a>
+                
+                <a href="mailto:vermaprabhat251@gmail.com" class="social-btn email-btn">
+                    <i class="fa-regular fa-envelope" style="font-size: 20px;"></i>
+                    Send an Email
+                </a>
+            </div>
 
-<h2>Contact</h2>
-
-<p>
-
-Instagram
-
-@justmrpk
-
-</p>
-
-</div>
-
-</div>
+            <a href="../index.html" class="back-home-btn">Back to Home</a>
+        </div>
+    </div>
 
 </body>
-
-</html>
+  </html>
+  
