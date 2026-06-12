@@ -1,0 +1,289 @@
+[
+{
+"id":"OWS001",
+"question":"A person who loves all mankind is called?",
+"options":["Philanthropist","Atheist","Polyglot","Stoic"],
+"answer":"Philanthropist",
+"explanation":"मानव जाति से प्रेम करने वाले व्यक्ति को परोपकारी (Philanthropist) कहते हैं।"
+},
+{
+"id":"OWS002",
+"question":"An inscription on a tombstone in the memory of the person who has died is called?",
+"options":["Epitaph","Panacea","Chronology","Utopia"],
+"answer":"Epitaph",
+"explanation":"मृत व्यक्ति की स्मृति में समाधि पर लिखे गए लेख को Epitaph कहते हैं।"
+},
+{
+"id":"OWS003",
+"question":"Something no longer in use is called?",
+"options":["Obsolete","Contemporary","Inevitable","Illegible"],
+"answer":"Obsolete",
+"explanation":"जो अब प्रचलन में न हो उसे Obsolete कहते हैं।"
+},
+{
+"id":"OWS004",
+"question":"Handwriting which is difficult or impossible to read is called?",
+"options":["Illegible","Extempore","Fastidious","Stoic"],
+"answer":"Illegible",
+"explanation":"जिस लिखावट को पढ़ना कठिन हो उसे Illegible कहते हैं।"
+},
+{
+"id":"OWS005",
+"question":"Something that cannot be avoided is called?",
+"options":["Inevitable","Panacea","Amateur","Aviary"],
+"answer":"Inevitable",
+"explanation":"जिसे टाला न जा सके उसे Inevitable कहते हैं।"
+},
+{
+"id":"OWS006",
+"question":"A place for keeping birds in a confined space is called?",
+"options":["Aviary","Utopia","Cartographer","Panacea"],
+"answer":"Aviary",
+"explanation":"पक्षियों को रखने के स्थान को Aviary कहते हैं।"
+},
+{
+"id":"OWS007",
+"question":"Belonging to the same time is called?",
+"options":["Contemporary","Obsolete","Stoic","Polyglot"],
+"answer":"Contemporary",
+"explanation":"एक ही समय का या समकालीन को Contemporary कहते हैं।"
+},
+{
+"id":"OWS008",
+"question":"A person who can endure pain without showing feelings is called?",
+"options":["Stoic","Atheist","Amateur","Polyglot"],
+"answer":"Stoic",
+"explanation":"जो कष्ट सहकर भी भावनाएँ व्यक्त न करे उसे Stoic कहते हैं।"
+},
+{
+"id":"OWS009",
+"question":"One who doesn't believe in the existence of God is called?",
+"options":["Atheist","Philanthropist","Stoic","Panacea"],
+"answer":"Atheist",
+"explanation":"ईश्वर के अस्तित्व में विश्वास न करने वाले को Atheist कहते हैं।"
+},
+{
+"id":"OWS010",
+"question":"A person who draws or makes maps is called?",
+"options":["Cartographer","Chronology","Aviary","Polyglot"],
+"answer":"Cartographer",
+"explanation":"मानचित्र बनाने वाले व्यक्ति को Cartographer कहते हैं।"
+},
+{
+"id":"OWS011",
+"question":"An extreme fear of being in a small confined place is called?",
+"options":["Claustrophobia","Panacea","Utopia","Stoic"],
+"answer":"Claustrophobia",
+"explanation":"छोटी बंद जगह का अत्यधिक डर Claustrophobia कहलाता है।"
+},
+{
+"id":"OWS012",
+"question":"One who knows everything is called?",
+"options":["Omniscient","Polyglot","Contemporary","Amateur"],
+"answer":"Omniscient",
+"explanation":"सब कुछ जानने वाले को Omniscient कहते हैं।"
+},
+{
+"id":"OWS013",
+"question":"A solution for all difficulties or diseases is called?",
+"options":["Panacea","Utopia","Aviary","Epitaph"],
+"answer":"Panacea",
+"explanation":"सभी रोगों या समस्याओं का सार्वभौमिक समाधान Panacea कहलाता है।"
+},
+{
+"id":"OWS014",
+"question":"A person who knows and uses several languages is called?",
+"options":["Polyglot","Cartographer","Stoic","Amateur"],
+"answer":"Polyglot",
+"explanation":"अनेक भाषाएँ जानने वाले व्यक्ति को Polyglot कहते हैं।"
+},
+{
+"id":"OWS015",
+"question":"An arrangement of events in the order of occurrence is called?",
+"options":["Chronology","Panacea","Epitaph","Utopia"],
+"answer":"Chronology",
+"explanation":"घटनाओं का समयानुसार क्रम Chronology कहलाता है।"
+},
+{
+"id":"OWS016",
+"question":"A speech made without previous preparation is called?",
+"options":["Extempore","Fastidious","Stoic","Obsolete"],
+"answer":"Extempore",
+"explanation":"बिना तैयारी के दिया गया भाषण Extempore कहलाता है।"
+},
+{
+"id":"OWS017",
+"question":"One who is difficult to please is called?",
+"options":["Fastidious","Stoic","Amateur","Polyglot"],
+"answer":"Fastidious",
+"explanation":"जिसे संतुष्ट करना कठिन हो उसे Fastidious कहते हैं।"
+},
+{
+"id":"OWS018",
+"question":"An imagined perfect society is called?",
+"options":["Utopia","Panacea","Aviary","Chronology"],
+"answer":"Utopia",
+"explanation":"आदर्श काल्पनिक समाज को Utopia कहते हैं।"
+},
+{
+"id":"OWS019",
+"question":"One who plays for pleasure rather than as a profession is called?",
+"options":["Amateur","Professional","Stoic","Polyglot"],
+"answer":"Amateur",
+"explanation":"जो शौकिया कार्य करता है, पेशेवर नहीं, उसे Amateur कहते हैं।"
+},
+{
+"id":"OWS020",
+"question":"Able to use the left hand and right hand equally well is called?",
+"options":["Ambidextrous","Iconoclast","Altruist","Bibliophile"],
+"answer":"Ambidextrous",
+"explanation":"जो व्यक्ति दोनों हाथों का समान रूप से अच्छी तरह उपयोग कर सके उसे Ambidextrous कहते हैं।"
+},
+{
+"id":"OWS021",
+"question":"A person who attacks or criticizes cherished beliefs or institutions is called?",
+"options":["Iconoclast","Mercenary","Lexicographer","Misanthrope"],
+"answer":"Iconoclast",
+"explanation":"जो व्यक्ति परंपरागत मान्यताओं या संस्थाओं का विरोध करता है उसे Iconoclast कहते हैं।"
+},
+{
+"id":"OWS022",
+"question":"One who cannot make mistake is called?",
+"options":["Infallible","Inaudible","Incorrigible","Omnipotent"],
+"answer":"Infallible",
+"explanation":"जो कभी गलती न करे उसे Infallible कहते हैं।"
+},
+{
+"id":"OWS023",
+"question":"Someone who makes charitable donations intended to the welfare of other people is called?",
+"options":["Altruist","Amateur","Stoic","Polyglot"],
+"answer":"Altruist",
+"explanation":"जो दूसरों के हित के लिए निःस्वार्थ भाव से कार्य करे उसे Altruist कहते हैं।"
+},
+{
+"id":"OWS024",
+"question":"The place where public, government or historical records are kept is called?",
+"options":["Archive","Aviary","Panacea","Utopia"],
+"answer":"Archive",
+"explanation":"जहाँ ऐतिहासिक या सरकारी अभिलेख सुरक्षित रखे जाते हैं उसे Archive कहते हैं।"
+},
+{
+"id":"OWS025",
+"question":"A person who loves or collects books is called?",
+"options":["Bibliophile","Cartographer","Chronologist","Polyglot"],
+"answer":"Bibliophile",
+"explanation":"पुस्तकों से प्रेम करने वाले व्यक्ति को Bibliophile कहते हैं।"
+},
+{
+"id":"OWS026",
+"question":"The murder of a whole race or a group of people is called?",
+"options":["Genocide","Homicide","Suicide","Patricide"],
+"answer":"Genocide",
+"explanation":"किसी जाति या समूह के सामूहिक नरसंहार को Genocide कहते हैं।"
+},
+{
+"id":"OWS027",
+"question":"A sound that cannot be heard is called?",
+"options":["Inaudible","Invisible","Illegal","Obsolete"],
+"answer":"Inaudible",
+"explanation":"जो ध्वनि सुनाई न दे उसे Inaudible कहते हैं।"
+},
+{
+"id":"OWS028",
+"question":"One who cannot be corrected or one who is beyond reform is called?",
+"options":["Incorrigible","Infallible","Omniscient","Extempore"],
+"answer":"Incorrigible",
+"explanation":"जिसे सुधारा न जा सके उसे Incorrigible कहते हैं।"
+},
+{
+"id":"OWS029",
+"question":"A person who writes and edits dictionaries is called?",
+"options":["Lexicographer","Bibliophile","Cartographer","Biographer"],
+"answer":"Lexicographer",
+"explanation":"शब्दकोश लिखने या संपादित करने वाले व्यक्ति को Lexicographer कहते हैं।"
+},
+{
+"id":"OWS030",
+"question":"Someone working or acting merely for money or a soldier who fights for money is called?",
+"options":["Mercenary","Missionary","Volunteer","Amateur"],
+"answer":"Mercenary",
+"explanation":"जो केवल धन के लिए काम करे या लड़ाई लड़े उसे Mercenary कहते हैं।"
+},
+{
+"id":"OWS031",
+"question":"A person who hates and avoids other people is called?",
+"options":["Misanthrope","Philanthropist","Altruist","Stoic"],
+"answer":"Misanthrope",
+"explanation":"जो व्यक्ति लोगों से घृणा करता है और उनसे दूर रहता है, उसे Misanthrope कहते हैं।"
+},
+{
+"id":"OWS032",
+"question":"Sentimental longing for a period in the past is called?",
+"options":["Nostalgia","Panacea","Claustrophobia","Chronology"],
+"answer":"Nostalgia",
+"explanation":"अतीत की सुखद यादों के प्रति भावुक लगाव को Nostalgia कहते हैं।"
+},
+{
+"id":"OWS033",
+"question":"An animal that can live both on land and in water is called?",
+"options":["Amphibian","Reptile","Mammal","Carnivore"],
+"answer":"Amphibian",
+"explanation":"जो जीव जल और स्थल दोनों पर रह सकता है, उसे Amphibian कहते हैं।"
+},
+{
+"id":"OWS034",
+"question":"The life history of a person written by himself is called?",
+"options":["Autobiography","Biography","Memoir","Diary"],
+"answer":"Autobiography",
+"explanation":"किसी व्यक्ति द्वारा स्वयं लिखी गई जीवन-कथा को Autobiography कहते हैं।"
+},
+{
+"id":"OWS035",
+"question":"A person who eats human flesh is called?",
+"options":["Cannibal","Carnivore","Herbivore","Omnivore"],
+"answer":"Cannibal",
+"explanation":"मनुष्य का मांस खाने वाले व्यक्ति को Cannibal कहते हैं।"
+},
+{
+"id":"OWS036",
+"question":"A person employed to drive a private or hired car is called?",
+"options":["Chauffeur","Pilot","Conductor","Navigator"],
+"answer":"Chauffeur",
+"explanation":"निजी या किराये की गाड़ी चलाने वाले चालक को Chauffeur कहते हैं।"
+},
+{
+"id":"OWS037",
+"question":"The scientific study of insects is called?",
+"options":["Entomology","Ecology","Biology","Geology"],
+"answer":"Entomology",
+"explanation":"कीटों के वैज्ञानिक अध्ययन को Entomology कहते हैं।"
+},
+{
+"id":"OWS038",
+"question":"One who is unable to pay debts is called?",
+"options":["Insolvent","Banker","Creditor","Debtor"],
+"answer":"Insolvent",
+"explanation":"जो व्यक्ति अपना कर्ज चुकाने में असमर्थ हो, उसे Insolvent कहते हैं।"
+},
+{
+"id":"OWS039",
+"question":"A person with a strong desire to steal is called?",
+"options":["Kleptomaniac","Robber","Thief","Pickpocket"],
+"answer":"Kleptomaniac",
+"explanation":"चोरी करने की मानसिक बीमारी से ग्रस्त व्यक्ति को Kleptomaniac कहते हैं।"
+},
+{
+"id":"OWS040",
+"question":"Government or rule by a small group of people is called?",
+"options":["Oligarchy","Democracy","Monarchy","Autocracy"],
+"answer":"Oligarchy",
+"explanation":"कुछ लोगों के छोटे समूह द्वारा शासन को Oligarchy कहते हैं।"
+},
+{
+"id":"OWS041",
+"question":"One who is all powerful is called?",
+"options":["Omnipotent","Omniscient","Immortal","Invisible"],
+"answer":"Omnipotent",
+"explanation":"जो सर्वशक्तिमान हो, उसे Omnipotent कहते हैं।"
+}
+]

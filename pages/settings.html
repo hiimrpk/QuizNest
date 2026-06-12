@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Quiz Settings</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="logo">
+
+<div class="logo-box">QN</div>
+
+<div>
+
+<h1>Test Settings</h1>
+
+<p>Customize Your Quiz</p>
+
+</div>
+
+</div>
+
+</header>
+
+<div class="container">
+
+<div class="subject-card">
+
+<h3>📚 Number of Questions</h3>
+
+<select id="count">
+
+<option value="10">10 Questions</option>
+
+<option value="20">20 Questions</option>
+
+<option value="25">25 Questions</option>
+
+<option value="41">All Questions</option>
+
+</select>
+
+</div>
+
+<div class="subject-card">
+
+<h3>⏱ Time Limit</h3>
+
+<select id="time">
+
+<option value="0">No Timer</option>
+
+<option value="5">5 Minutes</option>
+
+<option value="10">10 Minutes</option>
+
+<option value="15">15 Minutes</option>
+
+<option value="30">30 Minutes</option>
+
+</select>
+
+</div>
+
+<div class="subject-card">
+
+<h3>🎯 Mode</h3>
+
+<select id="mode">
+
+<option value="practice">Practice</option>
+
+<option value="exam">Exam</option>
+
+</select>
+
+</div>
+
+<button class="startBtn" onclick="startQuiz()">
+
+🚀 Start Test
+
+</button>
+
+</div>
+
+<script>
+
+function startQuiz(){
+
+localStorage.setItem(
+
+"count",
+
+document.getElementById("count").value
+
+);
+
+localStorage.setItem(
+
+"time",
+
+document.getElementById("time").value
+
+);
+
+localStorage.setItem(
+
+"mode",
+
+document.getElementById("mode").value
+
+);
+
+window.location="quiz.html";
+
+}
+
+</script>
+
+</body>
+
+</html>
