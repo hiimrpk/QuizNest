@@ -1,13 +1,13 @@
 let userAnswers = [];
-let questions=[];
+let questions = [];
 let mode = localStorage.getItem("mode");
 let selectedAnswer = "";
-let current=0;
+let current = 0;
 
-let score=0;
+let score = 0;
 
 // Subject & Topic
-let subject = localStorage.getItem("subject");
+let subject = localStorage.getItem("subject"); 
 let topic = localStorage.getItem("topic");
 
 // JSON Path
@@ -16,10 +16,13 @@ let filePath = `../data/${subject}/${topic}.json`;
 fetch(filePath)
 
 .then(res => {
+
     if (!res.ok) {
         throw new Error("File not found: " + filePath);
     }
+
     return res.json();
+
 })
 
 .then(data => {
@@ -39,40 +42,41 @@ fetch(filePath)
 .catch(err => {
 
     alert(err.message);
+
     console.log(err);
 
 });
 
-function loadQuestion(){
-  selectedAnswer="";
+function loadQuestion() {
 
-if(mode=="practice"){
-document.getElementById("nextBtn").style.display="none";
-}else{
-document.getElementById("nextBtn").style.display="block";
-}
+    selectedAnswer = "";
 
-document.getElementById("counter").innerHTML=
+    if (mode == "practice") {
 
-`Question ${current+1}/${questions.length}`;
+        document.getElementById("nextBtn").style.display = "none";
 
-document.getElementById("progressBar").style.width=
+    } else {
 
-((current+1)/questions.length)*100+"%";
+        document.getElementById("nextBtn").style.display = "block";
 
-document.getElementById("question").innerHTML=
+    }
 
-questions[current].question;
+    document.getElementById("counter").innerHTML =
+        `Question ${current + 1}/${questions.length}`;
 
-let html="";
+    document.getElementById("progressBar").style.width =
+        ((current + 1) / questions.length) * 100 + "%";
 
-questions[current].options
+    document.getElementById("question").innerHTML =
+        questions[current].question;
 
-.sort(()=>Math.random()-0.5)
+    let html = "";
 
-.forEach(option=>{
+    questions[current].options
+        .sort(() => Math.random() - 0.5)
+        .forEach(option => {
 
-html+=`
+            html += `
 
 <div class="option"
 
@@ -84,84 +88,81 @@ ${option}
 
 `;
 
-});
+        });
 
-document.getElementById("options").innerHTML=html;
+    document.getElementById("options").innerHTML = html;
+
+}
+function checkAnswer(element, ans) {
+
+    if (mode == "practice") {
+
+        userAnswers.push({
+            question: questions[current].question,
+            yourAnswer: ans,
+            correctAnswer: questions[current].answer
+        });
+
+        if (ans == questions[current].answer) {
+            score++;
+        }
+
+        nextQuestion();
+
+    } else {
+
+        selectedAnswer = ans;
+
+        document.querySelectorAll(".option").forEach(opt => {
+            opt.classList.remove("selected");
+        });
+
+        element.classList.add("selected");
+
+    }
 
 }
 
-function checkAnswer(element, ans){
+function nextQuestion() {
 
-if(mode=="practice"){
+    if (mode == "exam") {
 
-userAnswers.push({
-question: questions[current].question,
-yourAnswer: ans,
-correctAnswer: questions[current].answer
-});
+        if (selectedAnswer == "") {
 
-if(ans==questions[current].answer){
-score++;
-}
+            alert("Please select an option!");
 
-nextQuestion();
+            return;
 
-}
+        }
 
-else{
+        userAnswers.push({
 
-selectedAnswer = ans;
+            question: questions[current].question,
 
-document.querySelectorAll(".option").forEach(opt=>{
-opt.classList.remove("selected");
-});
+            yourAnswer: selectedAnswer,
 
-element.classList.add("selected");
+            correctAnswer: questions[current].answer
 
-}
+        });
 
-}
-function nextQuestion(){
+        if (selectedAnswer == questions[current].answer) {
 
-if(mode=="exam"){
+            score++;
 
-if(selectedAnswer==""){
+        }
 
-alert("Please select an option!");
+    }
 
-return;
+    current++;
 
-}
+    selectedAnswer = "";
 
-userAnswers.push({
+    if (current < questions.length) {
 
-question: questions[current].question,
+        loadQuestion();
 
-yourAnswer: selectedAnswer,
-
-correctAnswer: questions[current].answer
-
-});
-
-if(selectedAnswer==questions[current].answer){
-
-score++;
-
-}
-
-}
-
-current++;
-
-selectedAnswer="";
-
-if(current<questions.length){
-
-loadQuestion();
-
-}
-
-else {
+    } 
+    else {
 
         submitTest();
 
