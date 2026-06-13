@@ -161,53 +161,111 @@ loadQuestion();
 
 }
 
-else{
+else {
 
-localStorage.setItem("score",score);
+        submitTest();
 
-localStorage.setItem("total",questions.length);
-
-localStorage.setItem(
-"userAnswers",
-JSON.stringify(userAnswers)
-);
-
-window.location="result.html";
+    }
 
 }
 
-}
+function submitTest() {
 
-function startTimer(){
+    localStorage.setItem("score", score);
 
-let time=parseInt(localStorage.getItem("time"));
+    localStorage.setItem("total", questions.length);
 
-if(time==0){
+    localStorage.setItem(
+        "userAnswers",
+        JSON.stringify(userAnswers)
+    );
 
-document.getElementById("timer").innerHTML="∞";
-
-return;
-
-}
-
-let seconds=time*60;
-
-setInterval(()=>{
-
-let m=Math.floor(seconds/60);
-
-let s=seconds%60;
-
-document.getElementById("timer").innerHTML=
-
-`${m}:${s<10?"0":""}${s}`;
-
-if(seconds>0){
-
-seconds--;
+    window.location.href = "result.html";
 
 }
+function startTimer() {
 
-},1000);
+    let time = parseFloat(localStorage.getItem("time"));
+
+    if (time == 0) {
+
+        document.getElementById("timer").innerHTML = "∞";
+
+        return;
+
+    }
+
+    let seconds = Math.floor(time * 60);
+
+    let timer = setInterval(() => {
+
+        let m = Math.floor(seconds / 60);
+        let s = seconds % 60;
+
+        document.getElementById("timer").innerHTML =
+            `${m}:${s < 10 ? "0" : ""}${s}`;
+
+        if (seconds <= 0) {
+
+            clearInterval(timer);
+
+            alert("⏰ Time Up!");
+
+            // Exam Mode me current selected answer save karo
+            if (mode == "exam" && selectedAnswer != "") {
+
+                userAnswers.push({
+
+                    question: questions[current].question,
+
+                    yourAnswer: selectedAnswer,
+
+                    correctAnswer: questions[current].answer
+
+                });
+
+                if (selectedAnswer == questions[current].answer) {
+
+                    score++;
+
+                }
+
+            }
+
+            // Practice aur Exam dono ke liye submit
+            submitTest();
+
+            return;
+
+        }
+
+        seconds--;
+
+    }, 1000);
 
 }
+// Prevent accidental back during test
+
+history.pushState(null, null, location.href);
+
+window.addEventListener("popstate", function () {
+
+    history.pushState(null, null, location.href);
+
+    // Modal Show
+    document.getElementById("exitModal").style.display = "flex";
+
+});
+    // Continue Test
+document.getElementById("continueBtn").onclick = function () {
+
+    document.getElementById("exitModal").style.display = "none";
+
+};
+
+// Exit Test
+document.getElementById("exitBtn").onclick = function () {
+
+    window.location.href = "../index.html";
+
+};
